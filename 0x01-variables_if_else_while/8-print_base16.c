@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 
+
 /**
  * main - prints all the numbers of base 16 in lowercase, followed by a new line
  *
@@ -11,10 +12,10 @@
 int main(void)
 {
 /**
-*
-* hexadecimal
-* 0 1 2 3 4 5 6 7 8 9 a c d e f
-*/
+ *
+ * hexadecimal
+ * 0 1 2 3 4 5 6 7 8 9 a c d e f
+ */
 char ch;
 int n;
 
