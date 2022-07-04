@@ -5,9 +5,9 @@
 
 
 /**
- * main - Task 1 print the last digit of the number stored in the variable n
+ *main - Task 1 print the last digit of the number stored in the variable n
  * 
- * Return: 0
+ *Return: 0
  **/
 int main(void)
 {
