@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ *main - Entry point
  *
- * Return: Value 0 (success)
+ *Return: Value 0 (success)
  **/
 int main(void)
 {	
@@ -23,7 +23,7 @@ putchar(num2 % 10 + '0');
 if (!(num1 == (98) && num2 == (99)))
 {
 putchar(',');
-putchar(',');
+putchar(' ');
 }
 }
 }
