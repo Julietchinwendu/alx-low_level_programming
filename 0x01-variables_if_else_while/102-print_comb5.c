@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- *main - Entry point
+ * main - Entry point
  *
- *Return: Value 0 (success)
- * */
+ * Return: Value 0 (success)
+ **/
 int main(void)
 {	
 int num1, num2;
