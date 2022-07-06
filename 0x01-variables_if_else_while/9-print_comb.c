@@ -1,30 +1,25 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-
-
-
+#include <stdlib.h>
 /**
- * main - Task 1 print the last digit of the number stored in the variable n
- * 
- * Return: 0
- **/
+ * main - block to be executed
+ * Description: print out all single digits
+ * Return: 0 Success
+ */
 int main(void)
 {
-int ch;
+	int c = 0;
 
-for (ch = 48; ch <= 57; ch++)
-{
-putchar(ch);
-if (ch != 57)
-{
-putchar(44);
-putchar(32);
+	while (c < 10)
+
+	{
+		putchar(48 + c);
+		if (c != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		c++;
+	}
+	putchar('\n');
+	return (0);
 }
-}
-putchar(10);
-
-return (0);
-}
-
-
