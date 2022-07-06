@@ -1,32 +1,52 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - Entry point
- *
- * Return: Value 0 (success)
- **/
+ * main - block to be executed
+ * Description: a program that prints all possible
+ * combinations of two two-digit numbers
+ * The numbers should range from 0 to 99
+ * Return: 0 Success
+ */
 int main(void)
-{	
-int num1, num2;
-for (num1 = 0; num1 <= 99; num1++)
 {
-for (num2 = num1; num2 <= 99; num2++)
-{
-if (!(num1 == num2))
-{
-putchar(num1 / 10 + '0');
-putchar(num1 % 10 + '0');
-putchar(' ');
-putchar(num2 / 10 + '0');
-putchar(num2 % 10 + '0');
-if (!(num1 == (98) && num2 == (99)))
-{
-putchar(',');
-putchar(' ');
-}
-}
-}
-}
-putchar('\n');
-return (0);
+	int c = 0;
+	int d;
+	int e;
+
+	int c2;
+	int d2;
+	int e2;
+
+	while (c <= 98)
+	{
+		d = (c / 10 + '0');
+		e = (c % 10 + '0');
+		c2 = 0;
+
+		while (c2 <= 99)
+		{
+			d2 = (c2 / 10 + '0');
+			e2 = (c2 % 10 + '0');
+
+			if (c < c2)
+			{
+				putchar(d);
+				putchar(e);
+				putchar(' ');
+				putchar(d2);
+				putchar(e2);
+
+				if (c != 98)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+			c2++;
+		}
+		c++;
+	}
+	putchar('\n');
+
+	return (0);
 }
